@@ -9,9 +9,7 @@
 </head>
 <body>
     <header>
-        <a href="{{ route('comics.index') }}">
-            @yield('header_content')
-        </a>
+        @yield('header_content')
     </header>
     
     <main>

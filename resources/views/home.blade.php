@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('header_content')
-Visualizza i fumetti
+<a href="{{ route('comics.index') }}">Visualizza i fumetti</a>
 @endsection
 
 @section('main_content')
