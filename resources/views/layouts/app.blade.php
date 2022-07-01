@@ -9,6 +9,7 @@
 </head>
 <body>
     <header>
+        <a href="{{ route('comics.create') }}">Crea un fumetto</a>
         @yield('header_content')
     </header>
     
