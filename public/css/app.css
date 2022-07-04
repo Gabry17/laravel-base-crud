@@ -68,3 +68,7 @@ main .container .card p {
   color: white;
 }
 
+main .container .d-none {
+  display: none;
+}
+

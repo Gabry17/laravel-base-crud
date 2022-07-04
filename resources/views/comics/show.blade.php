@@ -21,10 +21,19 @@
             <p>{{ $comic_info->sale_date }}</p>
         </div>
         <a href="{{ route('comics.edit', ['comic' => $comic_info->id]) }}">MODIFICA</a>
+        <button class="eliminate1" 
+        onclick="
+        document.querySelector('.eliminate2').classList.remove('d-none')
+        document.querySelector('.eliminate1').classList.add('d-none')
+        " 
+        >Cancella</button>
         <form action="{{ route('comics.destroy', [ 'comic' => $comic_info->id ]) }}" method="POST">
             @csrf
             @method('DELETE')
-            <button>Cancella</button>
+            <div class="eliminate2 d-none">
+                <p>Sei sicuro di voler eliminare?</p>
+                <button >Cancella</button>
+            </div>
         </form>
     </div>
 @endsection
