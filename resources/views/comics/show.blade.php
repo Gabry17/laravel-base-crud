@@ -21,5 +21,10 @@
             <p>{{ $comic_info->sale_date }}</p>
         </div>
         <a href="{{ route('comics.edit', ['comic' => $comic_info->id]) }}">MODIFICA</a>
+        <form action="{{ route('comics.destroy', [ 'comic' => $comic_info->id ]) }}" method="POST">
+            @csrf
+            @method('DELETE')
+            <button>Cancella</button>
+        </form>
     </div>
 @endsection
