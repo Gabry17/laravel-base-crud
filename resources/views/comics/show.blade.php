@@ -8,7 +8,7 @@
     <div class="container">
         <div class="card">
             <h2>Titolo: {{ $comic_info->title }}</h2>
-            <img src="{{ $comic_info->thumb }}" alt="">
+            <img src="{{ $comic_info->thumb }}" alt="{{ $comic_info->title }}">
             <h2>Descrizione:</h2>
             <p>{{ $comic_info->description }}</p>
             <h2>Genere:</h2>
