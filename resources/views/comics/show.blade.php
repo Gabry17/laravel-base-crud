@@ -19,6 +19,7 @@
             <p>{{ $comic_info->series }}</p>
             <h2>Data:</h2>
             <p>{{ $comic_info->sale_date }}</p>
-            </div>
+        </div>
+        <a href="{{ route('comics.edit', ['comic' => $comic_info->id]) }}">MODIFICA</a>
     </div>
 @endsection
